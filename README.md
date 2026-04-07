@@ -62,6 +62,16 @@ Services:
 ## Next DevOps Steps
 
 - Move Mongo to Atlas or another managed multi-cloud option
-- Add CI/CD
 - Add container registry and deployment manifests
 - Add backup, restore, and failover workflows
+
+## CI
+
+GitHub Actions now validates the project with:
+
+- linting for the backend and frontend
+- smoke tests for the Express API and React UI
+- frontend production build verification
+- Docker image builds for both services
+- `npm audit` dependency vulnerability checks
+- CodeQL code scanning for JavaScript security issues
